@@ -3,13 +3,13 @@
 ## Overview
 
 Value at Risk (VaR) is the standard risk measure used by banks, hedge funds, and regulators
-worldwide. Under the Basel accords, financial institutions are required to compute and report VaR as part of their risk management framework. This project implements and compares three classical methods for VaR estimation using real financial data, and extends the analysis to Expected Shortfall. The three different methods of Value at Risk calculation demonstrated in this project are the following:
+worldwide. Under the Basel accords, financial institutions are required to compute and report VaR as part of their risk management framework. This project implements and compares three classical methods for VaR estimation using real financial data, and extends the analysis to Expected Shortfall. The three different methods of VaR calculation demonstrated in this project are the following:
 
-- Historical simulation 
+- **Historical simulation** 
 
-- Parametric method 
+- **Parametric method**
 
-- Monte Carlo Simulation
+- **Monte Carlo Simulation**
 
 ## Project Structure 
 
@@ -51,11 +51,11 @@ jupyter notebook VaR.ipynb
 
 ## Value at Risk analysis - Key results
 
-This project implements three different methods for the computation of the Value at Risk. The different values computed are the following:
+This project implements three different methods for the computation of the VaR. The different values computed are the following:
 
-- Historical Simulation VaR (99%): 5.37%
-- Parametric VaR (99%): 4.54%
-- Monte Carlo VaR (99%): 4.56%
+- **Historical Simulation VaR (99%): 5.37%**
+- **Parametric VaR (99%): 4.54%**
+- **Monte Carlo VaR (99%): 4.56%**
 
 The conclusions that can be drawn from the different methods comparison are the following:
 
@@ -69,7 +69,7 @@ The conclusions that can be drawn from the different methods comparison are the 
 
 This project also extends the analysis to calculating the Expected Shortfall. The value computed is the following:
 
-- Expected Shortfall (99%): 7.41%
+- **Expected Shortfall (99%): 7.41%**
 
 Compared to the Value at Risk analysis, it suggests that:
 
