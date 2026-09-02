@@ -105,7 +105,7 @@ def var_historical(returns: pd.Series, confidence: float) -> float:
         VaR expressed as a positive number representing a loss.
     """
 
-    if confidence > 1.0 and confidence < 0.0:
+    if confidence > 1.0 or confidence < 0.0:
         raise ValueError("The confidence level should be between 0 and 1")
     
     if len(returns) == 0:
@@ -135,7 +135,7 @@ def var_parametric(returns: pd.Series, confidence: float) -> float:
         VaR expressed as a positive number representing a loss.
     """
 
-    if confidence > 1.0 and confidence < 0.0:
+    if confidence > 1.0 or confidence < 0.0:
         raise ValueError("The confidence level should be between 0 and 1")
     
     if len(returns) == 0:
@@ -174,7 +174,7 @@ def var_montecarlo(returns: pd.Series, confidence: float, n_sim: int) -> float:
         VaR expressed as a positive number representing a loss.
     """
 
-    if confidence > 1.0 and confidence < 0.0:
+    if confidence > 1.0 or confidence < 0.0:
         raise ValueError("The confidence level should be between 0 and 1")
     
     if len(returns) == 0:
@@ -221,7 +221,7 @@ def plot_var_comparison(returns: pd.Series, var_hist: float, var_par: float, var
     if nbins <= 0:
         raise ValueError("The number of bins must be positive")
     
-    if confidence > 1.0 and confidence < 0.0:
+    if confidence > 1.0 or confidence < 0.0:
         raise ValueError("The confidence level should be between 0 and 1")
     
     _, ax = plt.subplots(figsize=(12, 6))
@@ -283,7 +283,7 @@ def expected_shortfall(returns: pd.Series, confidence: float) -> float:
         Expected Shortfall expressed as a positive number.
     """
 
-    if confidence > 1.0 and confidence < 0.0:
+    if confidence > 1.0 or confidence < 0.0:
         raise ValueError("The confidence level should be between 0 and 1")
     
     if len(returns) ==0:
@@ -322,7 +322,7 @@ def plot_expected_shortfall(returns: pd.Series, var: float, es: float, confidenc
     if nbins <= 0:
         raise ValueError("The number of bins must be positive")
     
-    if confidence > 1.0 and confidence < 0.0:
+    if confidence > 1.0 or confidence < 0.0:
         raise ValueError("The confidence level should be between 0 and 1")
     
     _, ax = plt.subplots(figsize=(12, 6))
